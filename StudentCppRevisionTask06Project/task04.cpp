@@ -40,11 +40,6 @@ bool task04(int x1, int y1, int x2, int y2) {
 		|| x1 > 8 || y1 > 8 || x2 > 8 || y2 > 8) {
 		return false;
 	}
-	if ((x1 == x2 && y1 != y2) || (y1 == y2 && x1 != x2)) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return ((x1 == x2 && y1 != y2) || (y1 == y2 && x1 != x2));
 	
 }
