@@ -31,10 +31,5 @@
 */
 
 bool task01(int x, int y) {
-	if ((x + y) % 2 == 0 && x >= 1 && y >= 1 && x <= 8 && y <= 8) {
-		return true;
-	}
-	else  {
-		return false;
-	}
+	return ((x + y) % 2 == 0 && x >= 1 && y >= 1 && x <= 8 && y <= 8);
 }
